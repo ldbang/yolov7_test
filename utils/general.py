@@ -385,7 +385,7 @@ def bbox_iou(box1, box2, x1y1x2y2=True, GIoU=False, DIoU=False, CIoU=False, SIoU
                 rho_h2 = ((b2_y2 - b2_y1) - (b1_y2 - b1_y1)) ** 2
                 cw2 = cw ** 2 + eps
                 ch2 = ch ** 2 + eps
-                print("eiou")
+#                 print("eiou")
                 return iou - (rho2 / c2 + rho_w2 / cw2 + rho_h2 / ch2)
         elif SIoU:
             s_cw = (b2_x1 + b2_x2 - b1_x1 - b1_x2) * 0.5 + eps
